@@ -12,17 +12,17 @@ int solve(){
 	vector<int> d(m,0);
 	for(int i=0;i<m;i++) cin>>d[i];
 	
-	int black=d[0];
-	int white=2*d[0];
+	int narrow=d[0];
+	int broad=2*d[0];
 	
 	string help="";
 
 	for(int i=0;i<m;i++){
-	    if((abs(d[i]-black)/black)*100>5&&(abs(d[i]-white)/white)*100>5){
+	    if((abs(d[i]-narrow)/narrow)*100>5&&(abs(d[i]-broad)/broad)*100>5){
 	        cout<<"bad code"<<endl;
 	        return 0;
 	    }
-	    if(abs(d[i]-black)<abs(d[i]-white)){
+	    if(abs(d[i]-narrow)<abs(d[i]-broad)){
 	        help.push_back('0');
 	    }
 	    else{
@@ -95,6 +95,11 @@ int solve(){
 	    cout<<"bad code"<<endl;
 	    return 0;
 	}
+
+    if(5<help.size()&&help[5]!='0'){
+        cout<<"bad code"<<endl;
+        return 0;
+    }
 	
 	
 	int i=6;
