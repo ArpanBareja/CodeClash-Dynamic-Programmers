@@ -11,6 +11,7 @@ Starting from the latest known absence date, started simulating forward day by d
 ---
 
 ## Approach of B
+![Observation](assets/ProblemB.jpg)
 Used DSU to join all adjacent 0 cells to connectred component. For every 0 cell grid its parent and size of component in find out using DSU and printed the number distinct components and size of each componenet.
 
 ---
