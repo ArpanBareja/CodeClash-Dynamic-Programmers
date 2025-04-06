@@ -17,7 +17,7 @@ Used DSU to join all adjacent 0 cells to connectred component. For every 0 cell 
 ---
 
 ## Approach of C
-Read bar widths and classify each as either black (0) or white (1) based on closeness to reference widths using a 5% tolerance margin.
+Read bar widths and classify each as either  narrow (0) or broad (1) based on closeness to reference widths using a 5% tolerance margin.
 Converted the bar sequence into a binary string of 0s and 1s, then determine orientation using start/stop sentinel codes. Reversed the string if needed.
 Divided the bitstring into 6-bit groups and decode each group using a lookup table. Extracted the data string while validating formatting.
 Computed the checksum values C and K from the decoded string using weighted sums and validate against the final two characters. Printed the result if valid, or an error message otherwise.
