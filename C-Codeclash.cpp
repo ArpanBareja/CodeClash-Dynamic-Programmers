@@ -2,7 +2,6 @@
 using namespace std;
 
 bool temp=true;
-
 int solve(){
     int m;
 	cin>>m;
